@@ -1,0 +1,57 @@
+.tasks {
+    list-style: none;
+    background-color: white;
+    padding: 20px;
+    margin: 1px;
+}
+
+.task__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.task__item--hidden {
+    display:none;
+}
+
+.task__button {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+}
+
+.task__button--toggleCompleted {
+    background-color: hsl(120, 100%, 25%);
+}
+
+.task__button--toggleCompleted:hover {
+    background-color: hsl(120, 100%, 32%);
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.task__button--toggleCompleted:active {
+    background-color: hsl(120, 100%, 39%);
+}
+
+.task__button--delete {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.task__button--delete:hover {
+    background-color: rgb(255, 0, 25%);
+    transform: scale(1.05);
+}
+
+.task__button--delete:active {
+    background-color: rgb(255, 0, 35%);
+}
+
+.task__content--completed {
+    text-decoration-line: line-through;
+}

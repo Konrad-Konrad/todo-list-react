@@ -1,0 +1,29 @@
+@media (max-width: 688px) {
+    .main__HideAllCompletedTask {
+        flex-basis: 100%;
+    }
+}
+
+.main__toogleTasksButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__HideAllCompletedTask {
+    padding: 10px;
+    border-style: none;
+    background-color: white;
+    color: teal;
+}
+
+.main__HideAllTasks {
+    padding: 10px;
+    border-style: none;
+    background-color: white;
+    color: teal;
+}
+
+.main__HideAllTasks:disabled {
+    color: grey;
+}
