@@ -10,7 +10,7 @@ const tasks = [
   { id: 2, content: "odrobić zaległości w nauce", done: false },
 ];
 
-const hideCompletedTasks = true;
+const hideDone = true;
 
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
       headerH1="Lista zadań"
       buttonsHeaderH2="Dodaj nowe zadanie"
       headerForm={<Form />}
-      paragraphButtons={<Buttons tasks={tasks} hideCompletedTasks={hideCompletedTasks} />}
+      paragraphButtons={<Buttons tasks={tasks} hideDone={hideDone} />}
       listHeaderH2="Lista zadań"
-      paragraphList={<Tasks tasks={tasks} hideCompletedTasks={hideCompletedTasks} />}
+      paragraphList={<Tasks tasks={tasks} hideDone={hideDone} />}
     />
     </Container>
 

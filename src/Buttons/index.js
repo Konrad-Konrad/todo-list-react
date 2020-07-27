@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
 
-const Buttons = ({ tasks, hideCompletedTasks }) => (
+const Buttons = ({ tasks, hideDone }) => (
     <div className="main__toogleTasksButtons">
     {tasks.length > 0 && (
     
             <React.Fragment>
                 <button className="main__HideAllCompletedTask">
-                    {hideCompletedTasks ? "Pokaż" : "Ukryj"} ukończone
+                    {hideDone ? "Pokaż" : "Ukryj"} ukończone
                     </button>
                 <button
                     className="main__HideAllTasks"

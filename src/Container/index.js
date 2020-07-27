@@ -2,8 +2,8 @@ import React from "react";
 import "./style.css"
 
 const Container = ({children}) => (
-    <div className="bodyContainer">
+    <main className="bodyContainer">
         {children}
-    </div>
+    </main>
 );
 export default Container;
