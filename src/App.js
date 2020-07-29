@@ -18,7 +18,8 @@ function App() {
   };
   const removeTask = (id) => {
     setTasks (tasks => tasks.filter(task => task.id !== id));
-  }
+  };
+
   const toggleTaskDone = (id) => {
     setTasks(tasks => tasks.map(task => {
       if(task.id === id) {
@@ -45,7 +46,7 @@ function App() {
       <Tasks 
       tasks={tasks} 
       hideDone={hideDone} 
-      removeTasks={removeTask}
+      removeTask={removeTask}
       toggleTaskDone={toggleTaskDone} />}
     />
     </Container>
