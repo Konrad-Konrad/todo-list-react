@@ -10,10 +10,21 @@ import { Clock } from "./Clock";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "przejśc na react.js", done: true },
-    { id: 2, content: "dodać readme do projektu", done: false },
-  ]);
+
+  const tasksFromLocalStorage = localStorage.getItem("tasks");
+
+  const [tasks, setTasks] = useState(
+    tasksFromLocalStorage
+      ? JSON.parse(tasksFromLocalStorage)
+      : [
+        { id: 1, content: "przejśc na react.js", done: true },
+        { id: 2, content: "dodać readme do projektu", done: false }
+      ]
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
 
   const toggleHideDone = () => {
