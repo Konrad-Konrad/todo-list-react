@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Main from "./Main";
 import Container from "./Container";
+import { Clock } from "./Clock";
+
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
     { id: 1, content: "przejśc na react.js", done: true },
     { id: 2, content: "dodać readme do projektu", done: false },
   ]);
+
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -50,6 +53,7 @@ function App() {
 
   return (
     <Container>
+      <Clock />
       <Main
         headerH1="Lista zadań"
         buttonsHeaderH2="Dodaj nowe zadanie"
