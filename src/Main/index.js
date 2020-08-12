@@ -8,7 +8,7 @@ const Main = ({ headerH1, headerForm, buttonsHeaderH2, listHeaderH2, paragraphBu
     <div className="main__header">
     
       <h1 className="main__headerH1">{headerH1}</h1>
-      <p><Clock /></p>
+      <Clock />
     </div>
     <h2 className="main__headerH2">{buttonsHeaderH2}</h2>
     {headerForm}
