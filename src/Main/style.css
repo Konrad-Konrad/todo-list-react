@@ -6,7 +6,10 @@
     align-items: space-around;
     justify-content: space-around;
 }
-
+.main__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .main__headerH1 {
     margin: 16px 0px;
     font-weight: 700;

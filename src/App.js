@@ -4,7 +4,6 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Main from "./Main";
 import Container from "./Container";
-import { Clock } from "./Clock";
 
 
 
@@ -64,7 +63,6 @@ function App() {
 
   return (
     <Container>
-      <Clock />
       <Main
         headerH1="Lista zadań"
         buttonsHeaderH2="Dodaj nowe zadanie"
